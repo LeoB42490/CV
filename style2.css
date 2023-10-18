@@ -95,14 +95,19 @@ h3 {
 
 }
 
-@media screen and (max-width : 600px) {
-        .cv-container {
-            padding: 10px;
-            
-        }
-    
-        /* Ajoutez d'autres styles ici si nécessaire */
+@media screen and (max-width: 600px) {
+    .cv-container {
+        flex-direction: column;
     }
+    .gauche, .droite {
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    .header {
+        font-size: 1.5em;
+    }
+}
 
 /*
 .portrait {
