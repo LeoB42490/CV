@@ -94,6 +94,12 @@ h3 {
     font-size: 100%;
 
 }
+
+@media screen and (max-width : 600px) {
+    .cv-container {
+        padding: 10px;
+    }
+}
 /*
 .portrait {
    
