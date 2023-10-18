@@ -98,19 +98,10 @@ h3 {
 @media screen and (max-width : 600px) {
         .cv-container {
             padding: 10px;
+            align-items: center;
             text-align: center; /* Centre le texte */
         }
-        .gauche, .droite {
-            width: 100%; /* Prend toute la largeur de l'écran */
-            padding: 20px; /* Réduit l'espacement */
-            box-sizing: border-box; /* Comprend les bordures dans la largeur */
-        }
-        .gauche {
-            order: 2; /* Change l'ordre de la colonne de gauche */
-        }
-        .header {
-            font-size: 1.5em; /* Ajuste la taille de la police dans l'en-tête */
-        }
+    
         /* Ajoutez d'autres styles ici si nécessaire */
     }
 
