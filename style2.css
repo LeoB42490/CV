@@ -36,6 +36,7 @@ h3 {
 .cv-container {
     
     display: inline-flex; /* Permet de mettre côte à côte 2 div */
+    text-align: center;
 
 }
 
