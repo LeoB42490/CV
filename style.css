@@ -1,6 +1,12 @@
-html , .p{
+html {
     width: 100%;
     overflow-wrap: break-word; /* Si les mots trop longs, ça coupe avant le mot  */
+}
+
+.p{
+    width: 100%;
+    overflow-wrap: break-word;
+    font-size: 10em;
 }
 
 body {
@@ -25,9 +31,9 @@ body {
     padding: 0px 85px 0 100px;
 }
 
-h2, h3 {
+h3 {
     font-family: Arial ;/* Police d'écriture */
-    font-size: 1.5em;   /* Taille de la police */
+    font-size: 1;   /* Taille de la police */
 }
 
 .accordion-item .accordion-header .accordion-button { /* Couleur des boutons "A propos de moi/Compétence/diplôme/hobbies/ou me trouver */
