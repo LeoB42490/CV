@@ -1,63 +1,106 @@
-html {
-    width: 100%;
-    overflow-wrap: break-word; /* Si les mots trop longs, ça coupe avant le mot  */
+body{ /* Permet de modifier l'endroit des 5 boutons */
+    text-align: center;
+    overflow-wrap: break-word;
+    background-color: rgba(175, 175, 175, 0.803);
 }
 
-.p{
+p , .list {
     width: 100%;
     overflow-wrap: break-word;
-    font-size: 10em;
+    font-size: 1.5em;
+}
+.collapsible { /* Modifier Bouton */
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 50%; /* Taille bouton */
+  text-align: center;
+  outline: none;
+  border: none;
+  font-size: 25px;
 }
 
-body {
-    background-size: cover;
-    font-family: Arial, sans-serif;
+.active, .collapsible:hover {
+  background-color: #555;
+}
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
 }
 
-.navbar { /* Pour Navbar */
-    position: fixed !important; /* Afin que lorsqu'on scrolle, la navbar reste */
-    padding-top: 20px;
-    background-color: gray;
-    width: 100%;
-    height: 90px;
-    z-index: 100; /* Mettre par dessus */
+.active:after {
+  content: "\2212";
 }
 
-.propos { /* Classe pour A propos */
-    padding: 100px 85px 0 100px;
+.content { /* Texte intérieur bouton */
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+  border-width: 5px; /* Texte dans bouton */
+  width: 47.5%;
+  margin: 0 auto;
+  display: block;
+  text-align: left;
+  border: 0.5px solid black;
 }
 
-.compétence , .Travaille , .Hobbie , .Trouver{
-    padding: 0px 85px 0 100px;
+.Navbar-Gauche {
+    width: 10%; /* Ajustez la largeur de la partie gauche de la barre de navigation */
+    background-color: rgb(0, 0, 0);
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.5em;
+    border: 2px solid white;
 }
 
-h3 {
-    font-family: Arial ;/* Police d'écriture */
-    font-size: 1;   /* Taille de la police */
+.Navbar-Gauche a{ /* Texte dans la navbar à gauche */
+  text-decoration: none; /* Supprime les soulignements des liens */
+  color: rgb(255, 255, 255); /* Change la couleur du texte des liens */
+  font-size: 50px;
 }
 
-.accordion-item .accordion-header .accordion-button { /* Couleur des boutons "A propos de moi/Compétence/diplôme/hobbies/ou me trouver */
-    color:rgb(45, 235, 32); /* Couleur du texte */
-    background-color: navy; /* Couleur du fond */
+.Navbar-Droite{
+    width: 90%; /* Ajustez la largeur de la partie droite de la barre de navigation */
+    background-color: rgb(0, 0, 0);
+    text-align: right;
     display: flex;
-    width: 100%;
+    justify-content: none; /* Répartit les éléments de manière égale dans l'espace disponible */
+    align-items: center; /* Centre verticalement les éléments */
+    padding-right: 2vw;
+    box-sizing: border-box; /* Inclut le padding dans la largeur et hauteur de l'élément */
+    border: 2px solid white;
 }
 
-.accordion-item{ /* Modifie l'intérieur des boutons */
-    text-align: left; /* Modifie le texte dans l'accordéon */
+.Navbar-Droite a{ /* Texte dans la navbar à droite */
+    text-decoration: none; /* Supprime les soulignements des liens */
+    color: rgb(255, 255, 255); /* Change la couleur du texte des liens */
+    margin-left: 150px;
+    font-size: 20px;
 }
 
-.accordion-item .accordion-collapse .accordion-body{ /* Modifie l'intérieur des boutons */
-    background-color: rgb(0, 25, 128); /* Modifie la couleur de l'intérieur du bouton */
-    color: rgb(45, 235, 32); /* Change la couleur du texte de l'intérieur du bouton */
-    text-align: left;
-    padding: 0px 0px 0px 150px;
+.Tout{
+    padding-top: 55px;
 }
 
-.accordion-body{
-    position:relative;
-    border-radius:10px;
-    border:1px solid;
-    padding:13px;
-    line-height:1.5em;
+.Navbar-Div{
+    position: fixed !important; /* Afin que lorsqu'on scrolle, la navbar reste */
+    top: 0; /* Aligne la barre de navigation en haut de la fenêtre */
+    left: 0;  /* Aligne la barre de navigation à gauche de la fenêtre */
+    width: 100%; /* Fait en sorte que la barre de navigation occupe toute la largeur */
+    z-index: 100; /* Mettre au-dessus des autres éléments */
+    display: flex;
+    align-items: top;  /* Centre verticalement les éléments */
+    text-align: right;
+}
+
+@media screen and (max-width:600px){
+  .Navbar-Div{
+    display: none;
+  }
 }
