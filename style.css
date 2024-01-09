@@ -114,18 +114,18 @@ p , .list {
     padding-right: 10px;
     overflow-wrap: break-word;
   }
-#Propos .list {
+#propos .list {
   font-size: 15px;
   display: block;
   overflow-wrap: break-word;
 }
-#Propos p{
+#propos p{
   display:flex;
   font-size: 15px;
   padding-bottom: 15px;
 }
-#Trouver .content {
+#trouver .content a {
   font-size: 5px;
-  overflow-wrap: break-word;
+  justify-content: space-between;
 }
 }
