@@ -14,7 +14,7 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
-// Script permettant de changer la couleur des boutons
+/* Script permettant de changer la couleur des boutons
 function RandomColor(){
   let  collapsible = document.querySelectorAll("div.Tout > button");
 
@@ -31,3 +31,4 @@ function RandomColor(){
 
 //addEventListener("click", RandomColor)
 setInterval(RandomColor, 600)
+*/

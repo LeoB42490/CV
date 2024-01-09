@@ -10,7 +10,7 @@ p , .list {
     font-size: 1.5em;
 }
 .collapsible { /* Modifier Bouton */
-  background-color: #777;
+  background-color: #313131;
   color: white;
   cursor: pointer;
   padding: 18px;
@@ -111,8 +111,7 @@ p , .list {
   } 
 #diplome li { /* avec id et enfant */
     font-size: 15px;
-    padding-right: 10px;
-    overflow-wrap: break-word;
+    padding: 0px 20px 10px 0px;
   }
 #propos .list {
   font-size: 15px;
@@ -127,5 +126,9 @@ p , .list {
 #trouver .content a {
   font-size: 5px;
   justify-content: space-between;
+}
+
+#competence .content{
+  padding-top: 10px;
 }
 }
