@@ -103,4 +103,29 @@ p , .list {
   .Navbar-Div{
     display: none;
   }
+  p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-wrap: break-word;
+  } 
+#diplome li { /* avec id et enfant */
+    font-size: 15px;
+    padding-right: 10px;
+    overflow-wrap: break-word;
+  }
+#Propos .list {
+  font-size: 15px;
+  display: block;
+  overflow-wrap: break-word;
+}
+#Propos p{
+  display:flex;
+  font-size: 15px;
+  padding-bottom: 15px;
+}
+#Trouver .content {
+  font-size: 5px;
+  overflow-wrap: break-word;
+}
 }
