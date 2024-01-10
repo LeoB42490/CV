@@ -6,9 +6,7 @@ body{ /* Permet de modifier l'endroit des 5 boutons */
 h1 {
   font-size: 15px;
 }
-h3{
-  font-size: 15px;
-}
+
 p , .list {
     width: 100%;
     overflow-wrap: break-word;
@@ -135,6 +133,9 @@ p , .list {
 
 #competence .content{
   padding-top: 10px;
+}
+h1 {
+  font-size: 5px;
 }
 }
 @media screen and (max-width: 1500px) {
