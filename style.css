@@ -4,7 +4,7 @@ body{ /* Permet de modifier l'endroit des 5 boutons */
     background-color: rgba(175, 175, 175, 0.803);
 }
 h1 {
-  font-size: 15px;
+  font-size: 250%;
 }
 
 p , .list {
@@ -16,7 +16,7 @@ p , .list {
   background-color: #313131;
   color: white;
   cursor: pointer;
-  padding: 18px;
+  padding: 25px;
   width: 50%; /* Taille bouton */
   text-align: center;
   outline: none;
@@ -53,59 +53,17 @@ p , .list {
   border: 0.5px solid black;
 }
 
-.Navbar-Gauche {
-    width: 10%; /* Ajustez la largeur de la partie gauche de la barre de navigation */
-    background-color: rgb(0, 0, 0);
-    text-decoration: none;
-    text-align: center;
-    font-size: 1.5em;
-    border: 2px solid white;
-}
-
-.Navbar-Gauche a{ /* Texte dans la navbar à gauche */
-  text-decoration: none; /* Supprime les soulignements des liens */
-  color: rgb(255, 255, 255); /* Change la couleur du texte des liens */
-  font-size: 50px;
-}
-
-.Navbar-Droite{
-    width: 90%; /* Ajustez la largeur de la partie droite de la barre de navigation */
-    background-color: rgb(0, 0, 0);
-    text-align: right;
-    display: flex;
-    justify-content: none; /* Répartit les éléments de manière égale dans l'espace disponible */
-    align-items: center; /* Centre verticalement les éléments */
-    padding-right: 2vw;
-    box-sizing: border-box; /* Inclut le padding dans la largeur et hauteur de l'élément */
-    border: 2px solid white;
-}
-
-.Navbar-Droite a{ /* Texte dans la navbar à droite */
-    text-decoration: none; /* Supprime les soulignements des liens */
-    color: rgb(255, 255, 255); /* Change la couleur du texte des liens */
-    margin-left: 150px;
-    font-size: 20px;
+.En-Tete{
+  background-color: #555;
+  padding: 5px;
+  color: white;
 }
 
 .Tout{
-    padding-top: 55px;
-}
-
-.Navbar-Div{
-    position: fixed !important; /* Afin que lorsqu'on scrolle, la navbar reste */
-    top: 0; /* Aligne la barre de navigation en haut de la fenêtre */
-    left: 0;  /* Aligne la barre de navigation à gauche de la fenêtre */
-    width: 100%; /* Fait en sorte que la barre de navigation occupe toute la largeur */
-    z-index: 100; /* Mettre au-dessus des autres éléments */
-    display: flex;
-    align-items: top;  /* Centre verticalement les éléments */
-    text-align: right;
+    padding-top: 50px;
 }
 
 @media screen and (max-width:600px){
-  .Navbar-Div{
-    display: none;
-  }
   p {
     display: flex;
     align-items: center;
@@ -135,11 +93,6 @@ p , .list {
   padding-top: 10px;
 }
 h1 {
-  font-size: 5px;
+  font-size: 20px;
 }
-}
-@media screen and (max-width: 1500px) {
-  .Navbar-Div{
-    display: none;
-  }
 }
