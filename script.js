@@ -14,21 +14,7 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
-/* Script permettant de changer la couleur des boutons
-function RandomColor(){
-  let  collapsible = document.querySelectorAll("div.Tout > button");
-
-      console.log(collapsible.length)
-  for (let i = 0; i < collapsible.length; i++) {
-      let randomRed = Math.floor(Math.random() * 255);
-      let randomGreen = Math.floor(Math.random() * 255);
-      let randomBlue = Math.floor(Math.random() * 255);
-
-      //accordionHeaders[i].innerHTML = "<a href=\"x.com\">tweeter</a>";
-      collapsible[i].style.color = `rgb(${randomRed}, ${randomGreen}, ${randomBlue})`
+// Simule le clic sur chaque bouton pour les ouvrir par défaut
+for (i = 0; i < coll.length; i++) {
+    coll[i].click();
   }
-}
-
-//addEventListener("click", RandomColor)
-setInterval(RandomColor, 600)
-*/
